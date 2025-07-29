@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+:root {
+  --pink: #e84393;
+}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: 0.2s linear;
+    }
+    html{
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+        overflow-x: hidden;
+    }
+    body {
+      overflow-x: hidden; 
+     }  
+    section{
+        padding: 2rem 9%;
+         
+    }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: black;
+  font-weight: bolder;
+}
+
+header .logo span {
+  color: var(--pink);
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #333;
+  /* text-decoration: none; */
+}
+
+header .navbar a span {
+  color: var(--pink);
+}
+header .navbar a:hover{
+  color: var(--pink);
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header .icons a:hover {
+  color: var(--pink);
+}
+header #Toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+    color: #333;
+
+  border-radius: 0.5rem;
+  padding:0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid rgba(0,0,0,.3 );
+  display: none;
+}
+
+
+
+ @media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+  section{
+    padding: 2rem;
+  }
+  .home{
+    background-position: left;
+  }
+}
+
+@media (max-width: 770px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: purple;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+  }
+  .home .content h3{
+    font-size: 5rem;
+  }
+  .home .content span{
+    font-size: 2.5rem;
+  }
+ 
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+    color: #333;
+  }
+
+
+   #Toggler:checked ~ .navbar {
+    display: flex;
+  } 
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: url(pexels-lilartsy-2058498.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 5rem;
+    color: #333;      
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--pink) ;
+    padding: 1rem 0;
+    line-height: 1.5;     
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #333; 
+    padding: 1rem 0;
+    line-height: 1.5;       
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --primary-color: #e91e63;
+  --text-color: #333;
+  --bg-color: #fff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.about {
+  padding: 50px 20px;
+  background-color: #fff0f5;
+}
+
+.about .heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.about .heading span {
+  color: var(--primary-color);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.video-container {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-container h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.content {
+  flex: 1 1 400px;
+}
+
+.content h3 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.content p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff80ab;
+  color: #000;
+}
+
+.btn{
+    display: inline-block;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: var(--pink);
+      color: #fff;
+      font-size: 1.6rem;
+      border-radius: 0.5rem;
+}
+.btn:hover{
+    background-color:white;
+    -webkit-text-fill-color: #ccc;
+    
+}
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.info span {
+  color: #777;
+  font-size: 0.9em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #333;
+}
+
+.products .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.products .heading span {
+  color: #e91e63;
+}
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.products .box {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.products .box:hover {
+  transform: translateY(-5px);
+}
+
+.products .box .discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #e91e63;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.products .box .image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.products .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products .box .image .icons {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s ease;
+  padding: 10px 0;
+}
+
+.products .box:hover .icons {
+  bottom: 0;
+}
+
+.products .box .icons a {
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.products .box .icons a:hover {
+  color: #e91e63;
+}
+
+.products .box .icons .cart-btn {
+  font-weight: bold;
+  background: #e91e63;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.products .box .icons .cart-btn:hover {
+  background: #d81b60;
+}
+
+.products .box .content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.products .box .content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.products .box .content .price {
+  font-size: 1.1rem;
+  color: #e91e63;
+}
+
+.products .box .content .price span {
+  font-size: 0.9rem;
+  color: #777;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.Review {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.Review .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.Review .heading span {
+  color: #e91e63;
+}
+
+.Review .box.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Review .box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.Review .box:hover {
+  transform: translateY(-5px);
+}
+
+.Review .stars {
+  color: purple;
+  margin-bottom: 1rem;
+}
+
+.Review p {
+  font-size: 2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.Review .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Review .user img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid #e91e63;
+}
+
+.Review .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Review .user h3 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+
+.Review .user span {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.Review .fas.fa-quoter.right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3rem;
+  color: #e91e63;
+  opacity: 0.3;
+}
+.contact {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+}
+
+.contact .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.contact .heading span {
+  color: #e91e63;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact form {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact .box {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.contact .box:focus {
+  border-color: #e91e63;
+}
+
+.contact .btn {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 1rem;
+  font: size 2px;
+}
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.footer .box {
+  flex: 1 1 250px;
+  text-align: left;
+}
+
+.footer .box h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  border-bottom: 2px solid #e91e63;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+
+.footer .box a {
+  display: block;
+  color: #ccc;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .box a:hover {
+  color: #e91e63;
+}
+
+
+.footer .box img {
+  width: 10vw;
+  margin-top: 10px;
+  border-radius: 8px;
+
+}
+
+
+.footer .credit {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.footer .credit span {
+  color: #e91e63;
+}
+
+
+@media (max-width: 768px) {
+  .footer .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .box {
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .Review .box.container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+    <input type="checkbox" name="" id="Toggler" />
+    <label for="Toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">Flower <span>.</span></a>
+   
+    <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">about</a>
+            <a href="#products">Products </a>
+            <a href="#review">Review </a>
+            <a href="#contact">Contact</a>
+
+
+</nav>
+
+            <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+
+            <a href="#" class="fas fa-user"></a> 
+            </div>
+            </header>
+
+           
+            <section class="home" id="home">
+  <div class="content">
+    <h3>Fresh Flowers</h3>
+    <span>Natural & Beautiful Flowers</span>
+    <p>
+Beautiful and natural flower notes can be short, sweet, and heartfelt. They can express love, appreciation, or simply convey a thoughtful sentiment.    </p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+</section>
+            
+<section class="about" id="About">
+
+    <h1 class="heading"> <span>About</span> us</h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="700_F_616521678_L2kYBtuOnwHA4WLXtpTeNah0OGXPZMLU_ST.mp4" loop autoplay muted></video>
+            <h3>Best Flower Sellers</h3>
+        </div>
+
+        <div class="content">
+            <h3>Why choose us?</h3>
+            <p>Flowers have a unique language of their own. They can convey love, sympathy, gratitude, and congratulations without uttering a single word.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="icons-container">
+  <div class="icons">
+    <img src="free.png" alt="Free Delivery">
+    <div class="info">
+      <h3>Free Delivery</h3>
+      <span>for all orders</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="10dayspng.png" alt="10 Days Return">
+    <div class="info">
+      <h3>10 Days Return</h3>
+      <span>Money-back guarantee</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="g.png" alt="Offers & Gifts">
+    <div class="info">
+      <h3>Offers & Gifts</h3>
+      <span>On all orders</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="se.jpg" alt="Secure Payment">
+    <div class="info">
+      <h3>Secure Payment</h3>
+      <span>Pay via GPay</span>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <h1 class="heading"> Latest <span>Products</span> </h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <span class="discount">10%</span>
+      <div class="image">
+        <img src="pot9.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="discount">15%</span>
+      <div class="image">
+        <img src="pot3.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="discount">5%</span>
+      <div class="image">
+        <img src="pot4.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="discount">17%</span>
+      <div class="image">
+        <img src="pot5.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+
+    <!-- Product Box 5 -->
+    <div class="box">
+      <span class="discount">13%</span>
+      <div class="image">
+        <img src="pot6.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="discount">12%</span>
+      <div class="image">
+        <img src="pot7.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="discount">16%</span>
+      <div class="image">
+        <img src="pot8.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+    <div class="box">
+      <span class="discount">7%</span>
+      <div class="image">
+        <img src="pot.jpg" alt="Flower Pot">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">$12.99 <span>$15.99</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="Review" id="Review">
+  <h1 class="heading"> customers <span> Review </span></h1>
+  <div class="box container">
+    <div class="box">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"> Recommended. This was an urgent request but FIM very kindly accommodated and their response was really fast. Flowers delivery was on time too. Thank you so much."</p>
+      <div class="user">
+        <img src="faces.jpg" alt="">
+        <div class="user info">
+          <h3> rakshii </h3>
+          <span>Happy customer</span>
+        </div>
+      </div>
+      <span class="fas fa-quoter-right"></span>
+    </div>
+  </div>
+
+  <div class="box container">
+    <div class="box">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p>
+        “Thank u so much! The flowers are so beautiful and the card is so cute ☺ the birthday boy is very happy. Thank u ☺ will definitely purchase flowers from you again. “
+      </p>
+
+        <div class="user">
+        <img src="face1.jpg" alt="">
+        <div class="user info">
+          <h3> Deepa </h3>
+          <span>Happy customer</span>
+        </div>
+      </div>
+      <span class="fas fa-quoter-right"></span>
+    </div>
+  </div>
+
+  <div class="box container">
+    <div class="box">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p style="font-family: Georgia, 'Times New Roman', Times, serif">
+        “V patient and friendly! Gorgeous creations and flexible and talented! Prompt delivery and great communications. Love the service! 2nd time buying. Her effiency is awesome!”
+      </p>
+      <div class="user">
+        <img src="face3.jpg" alt="">
+        <div class="user info">
+          <h3> Jayashree </h3>
+          <span>Happy customer</span>
+        </div>
+      </div>
+      <span class="fas fa-quoter-right"></span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="Contact">
+  <h1 class="heading"><span>Contact</span></h1>
+
+  <div class="row">
+    
+    <form action="">
+      <input type="text" placeholder="Your Name" class="box" required>
+      <input type="email" placeholder="Your Email" class="box" required>
+      <input type="tel" placeholder="Your Phone" class="box" required>
+      <textarea class="box" placeholder="Your Message" rows="5" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+
+    <div class="image">
+      <img src="face1.jpg" alt="">
+    </div>
+
+  </div>
+</section>
+
+<section class="footer">
+  <div class="box-container">
+
+    <div class="box">
+      <h3>Quick Links</h3>
+      <a href="#">My Account</a>
+      <a href="#">My Orders</a>
+      <a href="#">My Favorites</a>
+    </div>
+
+  
+    <div class="box">
+      <h3>Locations</h3>
+      <a href="#">Tiruvallur</a>
+      <a href="#">Chennai</a>
+      <a href="#">Madurai</a>
+      <a href="#">Salem</a>
+      <a href="#">Kerala</a>
+    </div>
+
+  
+    <div class="box">
+      <h3>Contact Info</h3>
+      <a href="#">Rakshii</a>
+      <a href="mailto:rakshii06@gmail.com">rakshii06@gmail.com</a>
+      <a href="#">Tiruvallur, India - 400104</a>
+      <img src="gpay.jpg" alt="Google Pay" style="width:100px; margin-top:10px;">
+    </div>
+
+  </div>
+
+  <div class="credit">
+    Created by <span>Mr. Web Designer</span> | All rights reserved
+  </div>
+</section>
+
+
+</body>
+</html>

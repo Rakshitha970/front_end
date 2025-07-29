@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zepto Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .install-btn {
+      background-color: purple;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+    .search-section {
+      background-color: #3c99dc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .search-section input {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background: #1e90ff;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+    }
+    .banner, .playtime {
+      margin: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .banner img, .playtime img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .playtime .offers {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .offer-box {
+      background: white;
+      width: 45%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .offer-box img {
+      width: 60px;
+      height: 60px;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background: white;
+      padding: 10px;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Install -->
+  <header>
+    <div>
+      <strong>Zepto: Install & get ₹125 off</strong><br/>
+      <span>⭐ 4.5 | 2M users</span>
+    </div>
+    <button class="install-btn">Install</button>
+  </header>
+
+  <!-- Search and Location -->
+  <div class="search-section">
+    <p><strong>Select Location</strong></p>
+    <input type="text" placeholder="Search for 'apple juice'" />
+  </div>
+
+  <!-- Category Navigation -->
+  <nav>
+    <div>All</div>
+    <div>Rakhi Store</div>
+    <div>Fashion</div>
+    <div>Cafe</div>
+    <div>Electronics</div>
+  </nav>
+
+  <!-- Paan Corner Banner -->
+  <div class="banner">
+    <img src="https://via.placeholder.com/350x120.png?text=Paan+Corner+Ad" alt="Paan Corner Banner" />
+  </div>
+
+  <!-- Play Time Fest Banner -->
+  <div class="playtime">
+    <img src="https://via.placeholder.com/350x100.png?text=PLAY+TIME+FEST" alt="Playtime Fest" />
+    <div class="offers">
+      <div class="offer-box">
+        <img src="https://via.placeholder.com/60" />
+        <p>Activities & Learning</p>
+        <small>Up to 60% Off</small>
+      </div>
+      <div class="offer-box">
+        <img src="https://via.placeholder.com/60" />
+        <p>Sports & Fitness</p>
+        <small>Up to 60% Off</small>
+      </div>
+      <div class="offer-box">
+        <img src="https://via.placeholder.com/60" />
+        <p>Stationery Store</p>
+        <small>Up to 70% Off</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer>
+    <div>🏠 Zepto</div>
+    <div>📂 Categories</div>
+    <div>☕ Cafe</div>
+    <div>🛒 Cart</div>
+  </footer>
+
+</body>
+</html>

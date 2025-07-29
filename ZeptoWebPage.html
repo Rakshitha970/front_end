@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zepto Web Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        #navbar{
+       width: 100vw;
+        height: 10vh;
+        background-color:whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        color: blueviolet;
+    }
+    #left,#right{
+        width: 100%;
+        height:10vh;
+        font-size: small;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    #navbar1{
+         width: 100%;
+         height: 4vh; 
+        background-color:pink;
+        display: flex;
+        justify-content: space-around;
+         align-items: center; 
+         padding: 10px;
+         font-size: 14px;
+    } 
+    #bg
+    {
+        width: 100vw;
+        height: 5vh; 
+        color:black;
+        display: flex;
+         align-items: center; 
+         justify-content: space-around;
+         }
+     #maingrid
+    {
+    width: 100vw;
+    height: 30VH;
+    background-color:white;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+
+}
+#grid{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+        display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+         justify-content: space-around;
+         align-items: center;
+    } 
+    /* #grid p{
+      margin-left: 10%;
+    } */
+     #grid1{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+      #grid2{
+        width: 100%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+     #grid3{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+     #grid4{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+      #grid5{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+      #grid6{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+      #grid7{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+      #grid8{
+        width: 15%;
+        height:20vh;
+        background-color:white;
+       display: grid;
+        grid-template-columns: 100px ;
+         margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
+     }
+      #grid p{
+      margin-left: 10%;
+    }
+     .carouselExampleSlidesOnly{
+      width: 100%;
+      height: 100px;
+      background-color:white;
+    }
+    #products {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+     .scroll-row{
+      height:50vh;
+      width: 100vw;
+      background-color: blue;
+        display: flex;
+        overflow-x: auto;
+      white-space: nowrap;
+        padding: 20px;
+        scroll-behavior: smooth;
+
+     }
+
+      .gr{
+        text-align: center;
+    }
+    p{
+        font-size: small;
+        font-style:initial;
+    }
+    .title{
+        grid-column: span 2;
+        font-size:x-small;  
+    }
+        
+
+        
+    </style>
+</head>
+<body>
+     <div id="navbar">
+        <div id="left">
+            <h1>Zepto</h1>
+            <select>
+                <option>Select Location</option>
+               <option>Thiruvallur</option>
+                <option>Chennai</option>
+                 <option>Perambur</option>
+                  <option>Ambattur</option>
+
+            </select>
+            </div>
+             <div id="right">
+        <input id=search type="search"
+            placeholder="search">
+            <i  class="bi bi-lock-fill"><h2>login</h2></i>
+        
+        <button>Cart</button>
+     </div>
+        </div>
+        <div id="navbar1">
+    <div id="bg">
+        <p>All</p>
+        <p>Cafe</p>
+        <p>Home</p>
+        <p>Toys</p>
+        <p>Fresh</p>
+        <p>Electronics</p>
+        <p>Mobile</p>
+        <p>Beauty</p>
+        </div>
+       </div>
+       <div id="maingrid">
+   <div id="grid"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="fs&v.jpg" width="160" height="100" style="margin-left: 5px;"/>
+     <p>Fruits & Vegetables</p>
+        </div>
+   </div>
+      <div id="grid1">
+                <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <img src="oil.jpg" width="160" height="100" ><h4>Atta, Rice, Oil & Dals</h4>
+                </div>
+      </div>
+     <div id="grid2"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="m.jpg" width="160" height="100"/><h4>Masala & Dry Fruits</h4>
+        </div>
+   </div>
+   <div id="grid3"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="ca.jpg" width="160" height="100"/><h4>Zepto Cafe</h4>
+        </div>
+   </div>
+   <div id="grid4"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="s.jpg" width="160" height="100"/><h4>Sweet Cravings</h4>
+        </div>
+   </div>
+    <div id="grid5"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="sp.jpg" width="160" height="100"/><h4>Toys & Sports</h4>
+        </div>
+   </div>
+    <div id="grid6"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="l.jpg" width="160" height="100"/><h4>Apparel & Lifestyle</h4>
+        </div>
+   </div>
+    <div id="grid7"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="jell.jpg" width="160" height="100"/><h4>Jewellery & Accessories</h4>
+        </div>
+   </div>
+    <div id="grid8"> 
+        <div class="title"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+     <img src="fs.jpg" width="160" height="100"/><h4>Frozen Food</h4>
+        </div>
+   </div>
+   </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="zepto/banner1.jpg" class="d-block w-100" alt="" >
+
+    </div>
+    <div class="carousel-item">
+            <img src="zepto/banner1.jpg" class="d-block w-100" alt="" >
+
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
