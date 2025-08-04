@@ -25,6 +25,7 @@ console.log(2/0);
 console.log(0.9+0.1);
 console.log(2.1+ 4.2);
 console.log(2.1 + 2.2);
+console.log(3.1+3.2);
 console.log(4 -undefined);
 
 
@@ -49,6 +50,6 @@ console.log("undefined" >"null");//its prints true
 console.log("undefined" <"null");//its prints false
 console.log("null" >"null");//its prints false
 
-console.log("a" <"c");//its prints false
+console.log("a" <"c");//its prints ture
 
 
